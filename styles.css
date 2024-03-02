@@ -1,0 +1,11 @@
+@media (max-width: 576px) {
+    .landing-img {
+        width: 450px;
+        height: 400px;
+    }
+}
+
+.feature-icon-small {
+    width: 3rem;
+    height: 3rem;
+}
