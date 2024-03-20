@@ -11,6 +11,25 @@
 }
 
 /*Servicios*/
+@media (max-width: 412px) {
+    .navigation-header {
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+
+    .home-icon-link {
+        justify-content: center;
+    }
+
+    .home-link {
+        justify-content: center;
+    }
+
+    .services-container {
+        padding: 0 50px 0 40px;
+    }
+}
+
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -51,7 +70,12 @@
   
   /* Style the back side */
 .flip-card-back {
-    background-color: dodgerblue;
+    background-color: white;
     color: white;
+    border: 2px solid goldenrod;
     transform: rotateY(180deg);
+}
+
+.card-title {
+    padding-top: 60px;
 }
