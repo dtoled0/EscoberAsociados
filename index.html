@@ -20,11 +20,13 @@
 
     <!-- Style -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="styles.css" rel="stylesheet">
   </head>
+
   <body>
     <!--Navigation Bar-->
-    <div class="container-sm">
+    <div id="navigation-bar" class="container-sm">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
         <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
           <img src="./images/balance.png" alt="balance" class="pe-2">
@@ -33,23 +35,23 @@
   
         <ul class="nav nav-underline">
           <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
-          <li class="nav-item"><a href="nosotros.html" class="nav-link">¿Quiénes Somos?</a></li>
+          <li class="nav-item"><a href="#about-us" class="nav-link">¿Quiénes Somos?</a></li>
           <li class="nav-item"><a href="#contact-section" class="nav-link">Contáctanos</a></li>
         </ul>
       </header>
     </div>
 
     <!--Landing Page-->
-    <div id="landing-container" class="container-sm col-xxl-12 px-4 py-5">
+    <div id="landing-container" class="container-sm col-xxl-12 px-4 py-5 border-bottom">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
-          <img src="./images/scale-gavel.jpg" class="landing-img d-block mx-lg-auto d-sm-block" alt="landing" width="700" height="500" loading="lazy">
+          <img src="./images/scale-gavel.jpg" class="landing-img" alt="landing"loading="lazy">
         </div>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Escober & Asociados</h1>
           <p class="">Asesoramiento Estratégico, Prevención Efectiva y Soluciones Sólidas</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2">
+            <button type="button" class="btn btn-outline-primary btn-md px-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
                 <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
               </svg>
@@ -61,18 +63,16 @@
     </div>
 
     <!--Features-->
-    <div class="container px-4 py-5">
-      <h2 class="pb-2 border-bottom"></h2>
-  
-      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+    <div class="services-container-homepage container-sm col-xxl- px-4 py-5 pb-2 border-bottom">
+      <div class="services-row-homepage row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
         <div class="col d-flex flex-column align-items-start gap-2">
           <h2 class="fw-bold text-body-emphasis">Servicios Legales</h2>
           <p class="">Nos enfocamos en materia laboral, familia, civil, administrativa, temas notariales y
             consultoría en el ámbito legal.</p>
-          <a href="servicios.html" class="btn btn-primary btn-lg">Ver Todos</a>
+          <a href="servicios.html" class="services-view-all btn btn-outline-primary btn-lg px-4 me-md-2">Ver Todos</a>
         </div>
   
-        <div class="col">
+        <div class="col services-column-homepage">
           <div class="row row-cols-1 row-cols-sm-2 g-4">
             <div class="col d-flex flex-column gap-2">
               <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
@@ -113,6 +113,56 @@
               <h4 class="fw-semibold mb-0 text-body-emphasis">Materia Administrativa</h4>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!--About Us-->
+    <div id="about-us" class="container text-center">
+      <div class="card mision">
+        <div class="card-body">
+          <h3 class="card-title">Nuestra Misión</h3>
+          <p class="card-text">
+            Nuestro compromiso es brindar servicios jurídicos de alta calidad a nuestros clientes, 
+            guiados por los más altos estándares éticos y profesionales. Nos esforzamos por ofrecer 
+            soluciones legales innovadoras y efectivas que satisfagan las necesidades específicas de 
+            nuestros clientes, y nos comprometemos a garantizar la confidencialidad y privacidad de 
+            nuestros clientes en todo momento.
+          </p>
+        </div>
+      </div>
+      <div class="card vision">
+        <div class="card-body">
+          <h3 class="card-title">Nuestra Visión</h3>
+          <p class="card-text">
+            Además, buscamos ser un lugar de trabajo atractivo y gratificante, donde nuestros abogados 
+            y personal puedan desarrollar sus habilidades y crecer profesionalmente, y donde se fomente 
+            un ambiente de trabajo colaborativo, inclusivo y respetuoso. Aspiramos a ser un líder en 
+            nuestra comunidad, utilizando nuestra experiencia legal para hacer una diferencia positiva 
+            en la vida de las personas y en nuestra sociedad en general.
+          </p>
+        </div>
+      </div>
+      <div class="card objective">
+        <div class="card-body">
+          <h3 class="card-title">Nuestros Objetivos</h3>
+          <p class="card-text">
+            En nuestro bufete legal, nuestro objetivo principal es brindar soluciones legales efectivas y 
+            personalizadas que satisfagan las necesidades específicas de nuestros clientes. Nos esforzamos 
+            por ser un socio confiable y de confianza para nuestros clientes, y por ofrecer un servicio 
+            excepcional en cada interacción.
+            <br><br>
+            Para lograr este objetivo, nos comprometemos a mantener un equipo de abogados y personal 
+            altamente capacitados y comprometidos, que trabajen juntos de manera colaborativa para garantizar 
+            que nuestros clientes reciban la mejor atención posible. Además, nos comprometemos a mantenernos 
+            actualizados en las últimas tendencias y desarrollos en nuestra área de práctica, y a utilizar 
+            tecnología y herramientas innovadoras para mejorar la eficiencia y efectividad de nuestros 
+            servicios legales.
+            <br><br>
+            En última instancia, nuestro objetivo es ayudar a nuestros clientes a resolver sus desafíos legales 
+            y lograr sus objetivos a través de soluciones jurídicas innovadoras, efectivas y éticas, y establecer 
+            relaciones duraderas basadas en la confianza y el respeto mutuo.
+          </p>
         </div>
       </div>
     </div>
@@ -179,7 +229,5 @@
         </ul>
       </footer>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
